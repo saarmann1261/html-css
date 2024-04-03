@@ -37,7 +37,7 @@ a {
 .section-ml {
   margin: 40px 0;
 }
-button.normal {
+.normal {
   font-size: 14px;
   font-weight: 600;
   padding: 15px 30px;
@@ -379,16 +379,6 @@ button.normal:hover {
   height: 30vh;
   position: relative;
 }
-/* .banner3 .banner-box:after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.02);
-
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-} */
 
 .banner3 .box-4 {
   background-image: url("img/banner/b4.jpg");
@@ -561,6 +551,119 @@ a#close {
   font-weight: 600;
   font-size: 16px;
 }
+/* single product details */
+.sp-details .sp-img {
+  width: 40%;
+  margin-right: 50px;
+}
+.sm-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+.sm-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.sp-details {
+  display: flex;
+  margin-top: 20px;
+}
+
+.sp-about {
+  width: 50%;
+  padding-top: 30px;
+}
+.sp-about h4 {
+  padding: 40px 0 20px 0;
+}
+.sp-about h2 {
+  font-size: 26px;
+}
+.sp-about select {
+  display: block;
+  padding: 5px 5px 5px 0;
+  margin-bottom: 10px;
+}
+.sp-about input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.sp-about input:focus {
+  outline: none;
+}
+.sp-about button {
+  background-color: #088178;
+  color: #fff;
+}
+.sp-about span {
+  line-height: 25px;
+}
+/* blog page */
+
+.blog-header {
+  background-image: url(img/banner/b19.jpg);
+}
+.blog {
+  padding: 150px 150px 0 150px;
+}
+.blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+.blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+.blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.blog .blog-details {
+  width: 50%;
+}
+.blog .blog-details a {
+  font-size: 11px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.blog .blog-details a:hover {
+  color: #088178;
+}
+.blog .blog-details a::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #555;
+  top: 6px;
+  right: -60px;
+}
+.blog .blog-details a:hover::after {
+  background-color: #088178;
+}
+.blog .blog-box h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 7000;
+  color: #c9cbce;
+  z-index: -1;
+}
 
 /* responsive */
 @media (max-width: 799px) {
@@ -613,7 +716,7 @@ a#close {
   .lg-bag {
     display: none;
   }
-  /* movile hero */
+  /* tab hero */
   .hero {
     height: 70vh;
     width: 100%;
@@ -657,6 +760,9 @@ a#close {
     padding: 12px 30px;
   }
 }
+/* mobile device */
+/* mobile device */
+/* mobile device */
 @media (max-width: 477px) {
   .section-p1 {
     padding: 20px;
@@ -700,6 +806,33 @@ a#close {
     padding: 40px 20px !important;
   }
   .news .form {
+    width: 100%;
+  }
+  /* single product details */
+  .sp-details .sp-img {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .sp-details {
+    flex-wrap: wrap;
+  }
+  .sp-about {
+    width: 100%;
+  }
+  /* blog */
+  .blog {
+    padding: 100px 20px 0 20px;
+  }
+  .blog .blog-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .blog .blog-details {
     width: 100%;
   }
 }
